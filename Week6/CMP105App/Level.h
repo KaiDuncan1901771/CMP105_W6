@@ -4,7 +4,9 @@
 #include "Framework/Input.h"
 #include <string.h>
 #include <iostream>
-
+#include "Player.h"
+#include "Player2.h"
+#include "Player3.h"
 
 class Level{
 public:
@@ -23,6 +25,14 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+
+
+	Player player;
+	Player2 player2;
+	Player3 player3;
+	sf::Texture playerTexture;
+	sf::Texture player2Texture;
+	sf::Texture player3Texture;
 
 	// More level variables
 };
